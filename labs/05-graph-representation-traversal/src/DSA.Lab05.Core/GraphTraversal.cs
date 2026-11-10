@@ -15,7 +15,6 @@ namespace DSA.Lab05
     {
         public static IReadOnlyList<string> BreadthFirstOrder(AdjacencyGraph graph, string start) 
         {
-            int V = graph.NodeCount;
             HashSet<string> visited = new HashSet<string>();
             List<string> res = new List<string>();
 
@@ -45,9 +44,6 @@ namespace DSA.Lab05
 
         public static IReadOnlyList<string> DepthFirstOrder( AdjacencyGraph graph, string start)
         {
-
-
-            int V = graph.NodeCount;
             HashSet<string> visited = new HashSet<string>();
             List<string> res = new List<string>();
 
@@ -78,7 +74,6 @@ namespace DSA.Lab05
 
         public static bool IsReachableBfs(AdjacencyGraph graph, string start,  string target)
         {
-            int V = graph.NodeCount;
             HashSet<string> visited = new HashSet<string>();
 
             string src = start;
